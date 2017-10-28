@@ -3,12 +3,15 @@
 <html>
 
 <head>
-    <title>Blog</title>
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
+    <title>SIOlab</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'css/blog.css' %}">
 </head>
+
 <body>
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: ##87919E;">
         <a class="navbar-brand" href="/">
@@ -30,19 +33,85 @@
         </div>
     </nav>
     <div class="banner">
-    <div class="page-header">
+        <div class="container">
+            <h1>SIOlab</h1>
+        </div>
         {% if user.is_authenticated %}
-            <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
-        {% endif %}
-        <h1><a href = "/"> Blog </a></h1>
+        <a href="{% url 'post_new' %}" class="top-menu"><span class="fa fa-plus"></span></a> {% endif %}
     </div>
-    <div class="content container">
-        <div class="row">
-            <div class="col-md-8">
-                {% block content %} 
-                {% endblock%}
+    <br/>
+    <div class="about">
+        <h2> about us</h2>
+        <hr width=50%/>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent volutpat eget diam a convallis. Vestibulum non mollis nisl. Aliquam interdum purus vel massa lobortis, nec volutpat quam pretium. Pellentesque eu aliquam diam. Cras semper, tortor id gravida vestibulum, odio elit dignissim massa, ut volutpat sem nulla ac dui. Cras eget aliquet nunc. Morbi venenatis malesuada justo eget elementum. </p>
+    </div>
+    <div class="projects">
+        <h2> projects </h2>
+        <hr width=50%>
+        <div class="container">
+            <div class="row align-element-start">
+                <div class="col">
+                    <a href= "#"><img src="https://source.unsplash.com/gkdz7tnzcI4" /></a>
+                </div>
+                <div class="col">
+                    <a href="#"><img src="https://source.unsplash.com/UZtRU-lWZE4" /></a>
+                </div>
+                <div class="col">
+                    <a href= "#"><img src="https://source.unsplash.com/B7LQIv_ccl4"/></a>
+                </div>
             </div>
         </div>
     </div>
+    <br/>
+    <div class="team">
+        <h2> our team </h2>
+        <hr width=50%>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <img src="https://source.unsplash.com/Efj0HGPdPKs" />
+                </div>
+                <div class="col">
+                    <img src="https://source.unsplash.com/b-04RGKgh30" />
+                </div>
+                <div class="col">
+                    <img src="https://source.unsplash.com/mfYgk8rfFps" />
+                </div>
+            </div>
+            <br/>
+            <div class="row">
+                <div class="col">
+                    <img src="https://source.unsplash.com/lOXSEYO6a90" />
+                </div>
+                <div class="col">
+                    <img src="https://source.unsplash.com/WiSeaZ4E6ZI" />
+                </div>
+                <div class="col">
+                    <img src="https://source.unsplash.com/LHA5EWdwWE4" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <div class="blog text-center">
+        <div class="row">
+            <div class="col-md-6 offset-md-3"> {% block content %} {% endblock%}
+            </div>
+        </div>
+    </div>
+    <footer class="footer text-center">
+        <hr width=9 0%/>
+        <div class="contact">
+            <h5>contact us</h5>
+            <div class="icons">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a
+            <a href="#" class="fa fa-snapchat-ghost"></a>
+                <a href="#" class="fa fa-envelope"></a>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>
