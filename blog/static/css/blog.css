@@ -3,14 +3,10 @@
     color: 'dark gray';
 }
 
-body {
-    background-color: white;
-}
-
 h2 {
     font-style: cursive;
-    text-align: center;
 }
+
 
 .banner {
     background-image: url("https://source.unsplash.com/uRvI1Q64vzg");
@@ -39,8 +35,21 @@ h2 {
     margin: 0 auto;
 }
 
-.about p {
-    text-align: center;
+.banner .navbar {
+    padding: 10px;
+}
+
+.about {
+    align-self: center;
+    padding: 30px;
+    margin: 0px 100px;
+    min-width: 500px;
+}
+
+
+.projects {
+    margin: auto;
+    padding: 30px;
 }
 
 .projects .container img {
@@ -48,18 +57,10 @@ h2 {
     height: 100%;
 }
 
-.team .container img{
-    width:100%;
-    height:100%;
-}
 
 .content {
     margin-left: 100px;
 }
-
-
-
-.date {}
 
 .save {
     float: right;
@@ -85,23 +86,58 @@ h2 {
 
 .post h1 a,
 .post h1 a:visited {
-    text-align:center;
+    text-align: center;
     color: black;
 }
 
 .post p {
-    text-align:center;
+    text-align: center;
 }
 
-.fa {
+.team {
+    background-color: #F7F7F7;
+    padding: 30px;
+}
+
+.team img:hover {
+    opacity: 0.5;
+}
+
+
+.team .container img {
+    width: 100%;
+    height: 100%;
+}
+
+.blog-info {
+    background-image: url("https://source.unsplash.com/IBnAVRHBYgA");
+    background-size: cover;
+    background-position: center 10%;
+    height: 400px;
+}
+
+.blog-info h2 {
+    border: 4px solid white;
+    position: relative;
+    top: 100px;
+    padding: 10px;
+    width: 300px;
+    margin: 0 auto;
+    color: #ffffff;
+}
+
+.footer {
+    background-color: #EFF0F4;
+    padding: 30px;
+    color: #797D81;
+    padding: 30px;
+}
+
+.footer .fa {
     padding: 20px 20px 20px 0px;
-    font-size: 30px;
+    font-size: 20px;
     width: 30px;
     border-radius: 50%;
-    color: black;
+    color: #797D81;
+    text-decoration: none;
 }
-
-.team:hover img {
-    opacity: 0.3;
-}
-
