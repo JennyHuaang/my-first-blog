@@ -47,12 +47,12 @@ h2 {
 }
 
 
-.projects {
+#projects {
     margin: auto;
     padding: 30px;
 }
 
-.projects .container img {
+#projects .container img {
     width: 100%;
     height: 100%;
 }
@@ -84,8 +84,8 @@ h2 {
     text-align: center;
 }
 
-.post h1 a,
-.post h1 a:visited {
+.post h3 a,
+.post h3 a:visited {
     text-align: center;
     color: black;
 }
@@ -94,17 +94,48 @@ h2 {
     text-align: center;
 }
 
-.team {
+#team {
     background-color: #F7F7F7;
     padding: 30px;
 }
 
-.team img:hover {
-    opacity: 0.5;
+#team .hover-top {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    color: #3E474F;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -ms-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+    align-content: center;
+}
+
+#team .hover-top:hover, .team.active span{
+    opacity:1;
+}
+
+#team span{
+    text-align: center;
+    font-size: 30px;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
 
-.team .container img {
+#team .container img{
     width: 100%;
     height: 100%;
 }
